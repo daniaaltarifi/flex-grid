@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{background-color: rgb(172, 171, 171);}
+        form{display:grid;grid-column: repeat(3,1fr);justify-content: center;background-color: white;border-radius: 20px;width:max-content;}
+        .last{grid-column: 2/3;grid-row: 2/3;}
+        .email{grid-column: 1/2;}
+     .first{grid-row: 2/3;}
+.city{grid-column: 1/2;}
+label{background-color: white;}
+input{background-color: white;}
+textarea,select{background-color: white;}
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h1 style="background-color: white;">Jop Application (web)</h1>
+        <label class="first">First Name <br>
+    <input type="text">
+            </label><br>
+            <label class="last">Last Name <br>
+                <input type="text">
+                        </label>
+                        <label class="email">email <br>
+                            <input type="email">
+                        </label>
+                        <label >job role <br>
+                 <select>job role
+<option value="">select job role</option>
+<option value="">select job role</option>
+<option value="">select job role</option>
+
+                 </select></label>
+ <label class="address">address <br>
+    <textarea name="address" cols="55" rows="3">Enter address</textarea><br>
+
+</label>
+<label class="city">city <br>
+     <input type="text"></label>
+     <label for="">pincode <br>
+<input type="text">
+     </label>
+     <label for="'">date <br>
+<input type="datetime-local" name="" id="">
+     </label>
+     <label for="">upload your file <br>
+<input type="file">
+     </label>
+     <button style="background-color: red;width: 80px;color: white;margin-left: 112%;margin-top: 8px;">Apply now</button>
+    </form>
+  
+</body>
+</html>

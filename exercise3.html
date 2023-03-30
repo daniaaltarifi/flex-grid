@@ -1,0 +1,112 @@
+
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+         .grid{
+   
+   display: grid;
+   grid-gap: 5px;
+   grid-template-columns: repeat(12,1fr);
+   grid-template-rows: 40px auto 40px;
+   text-align: center;
+   @media screen and (max-width: 768px) {
+ .grid {
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ }
+}
+
+}
+        .header{grid-column: 1/-1;background-color: black;color: aliceblue;text-align: left;font-size: 20px;padding-top: 1px;height: 50px;padding-bottom: 15px;}
+        .sidebar{grid-column: 1/3;background-color: orange;grid-row: 2/10;width: 250px;height: 632px;}
+        .nav{grid-column: 3/-1;grid-row: 2/4;background-color: orange;}
+        .article{grid-template-columns: repeat(6,2fr);grid-template-rows: repeat(2,2fr) ;background-color:	#c5e7ff; display: grid;}
+        .footer{grid-column: 1/-1;background-color: gray;height: 50px;}
+        .copyright{margin-top: 15px;}
+        .side{background-color: aliceblue;height: 70px;width: 100%;display: grid;justify-content: center;margin-top: 25%;}
+        .navbar{list-style-type: none;display: flex;justify-content: space-around;align-items: center;color: white;}
+        .menu{color: white;list-style-type: none;display: flex;justify-content: space-around;align-items: center;}
+        .head{grid-column: 3/4;grid-row: 1/2;}
+        .card {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: black;
+  padding: 1rem;
+  height:250px;
+  width: 155px;
+}
+
+            </style>
+        </head>
+        <body>
+            
+            <div class="grid">
+                <div class="header">
+              <p> Header logo</p> 
+              <div class="head"> <div>
+            <ul class="menu">
+                <li >headerone</li>
+                <li >headerone</li>
+                <li >headerone</li>
+
+            </ul>
+          </div></div>
+              
+           </div>
+          
+           <div class="sidebar">
+            
+            <div class="side">
+                <p>placeholder for image</p>
+            </div>
+            <div class="side">
+                <p>Box1</p>
+            </div>
+            <div class="side">
+                <p>Box2</p>
+            </div>
+            <div class="side">
+                <p>Box3</p>
+            </div>
+           </div>
+           <div class="nav">
+             <div >
+                <ul class="navbar">
+                    <li> <b>Lateset articles</b> </li>
+                    <li><b>Most Views</b> </li>
+                    <li><b>Headlined</b> </li>
+
+                </ul>
+             </div>
+           </div>
+           <div class="article">
+            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugiat architecto, error magnam ex nesciunt porro nam minima consequuntur. Amet quidem illum laudantium quaerat inventore esse culpa iure impedit in?</div>
+            <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolores impedit minima adipisci, quidem velit. Numquam, hic similique? Soluta facilis aperiam possimus pariatur atque reiciendis sunt a velit, obcaecati fugit?</div>
+            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora autem hic dolorum veritatis, repudiandae voluptatem enim nisi nulla modi? Labore omnis dolorum quasi impedit sapiente esse deleniti debitis ut laborum.</div>
+            <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, impedit. Labore deleniti aperiam quis. Tenetur nam, exercitationem reiciendis, omnis vel nihil explicabo eius neque asperiores repellat laudantium, porro sapiente eaque.</div>
+            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore cupiditate rem in asperiores. Totam, quisquam possimus eveniet dicta minima corrupti debitis blanditiis aliquam laudantium, veniam necessitatibus repellendus maxime? Blanditiis?</div>
+            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente exercitationem nulla dolore excepturi facere placeat praesentium voluptates assumenda quibusdam ipsum quo, quod tenetur? Minima facere repudiandae repellendus temporibus magni dolorum?</div>
+            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vitae voluptas quae quidem assumenda temporibus facilis esse odit, ipsum blanditiis dolore tempora eaque deleniti at ea ab. Dolores, rerum dolorum.</div>
+            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum veniam doloribus soluta impedit expedita, possimus, nemo blanditiis ab explicabo accusantium temporibus sunt. Molestiae fuga voluptates, itaque possimus perspiciatis esse?</div>
+            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, atque dolorum eius reiciendis cum obcaecati possimus asperiores repellat fuga temporibus numquam! Sint, voluptas! Earum error facilis sit velit quisquam deserunt.</div>
+            <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea officia quae nisi beatae quaerat omnis voluptatum, aliquam fugiat earum laborum saepe autem et error consequatur eius temporibus, obcaecati similique eligendi?</div>
+            <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro similique totam ipsa, nemo suscipit eaque obcaecati ab beatae voluptatum ex, sequi reiciendis voluptatibus dolore omnis perspiciatis itaque ratione eveniet corrupti.</div>
+            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero, commodi pariatur sed corrupti eius consequatur expedita, recusandae ab nesciunt enim. Fugiat debitis voluptates blanditiis nobis qui soluta fuga enim!</div>
+        
+        </div>
+        
+           <div class="footer">
+            <div class="copyright"> copyright &copy;the project2021</div>
+           
+        
+        </div>
+        </div>
+        
+        </body>
+        </html>
+           
